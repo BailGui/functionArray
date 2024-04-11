@@ -1,4 +1,4 @@
-/*1) Vous recevez un array contenant des mots formant deux phrases.
+/* Vous recevez un array contenant des mots formant deux phrases.
  Transformez cet array en phrases correctes en une instruction.
 arrayMots = ["Rien", "ne", "sert", "de", "courir", ";", "il", "faut", "partir", "à", "point.", "Le",
  "Lièvre", "et", "la", "Tortue", "en", "sont", "un", "témoignage."] */
@@ -38,7 +38,14 @@ arrayMots = ["Rien", "ne", "sert", "de", "courir", ";", "il", "faut", "partir", 
 
  var MyArray = ["Brenda", "Amelia", "Kate", "Kayla", "Jackie", "Daria", "Anna"];
 
- let myNewArrayName =  myArray.filter(e=> {return e[0] === "A"});
+ let MyNewArrayName =  MyArray.filter(e=> {return e[0] === "A"});
+
+ /*En utilisant la méthode appropriée, trouvez le premier chiffre qui est divisible par 3
+ sans laisser de reste dans la liste suivante:*/
+
+ var MyArray = [23, 13, 44, 7, 27, 38, 71, 19]
+
+ let myNewArrayTriple = MyArray.findIndex(e => {return e%3 === 0});
 
  
  
