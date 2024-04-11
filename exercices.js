@@ -16,7 +16,7 @@ arrayMots = ["Rien", "ne", "sert", "de", "courir", ";", "il", "faut", "partir", 
 
  /* A partir de l'array suivant [9, 45, 90, 37, 36, 54] donner l'index de la première valeur qui n'est pas entièrement divisible par 3*/
 
- var myArray = [9, 45, 90, 37, 36, 54]
+ var myArray = [9, 45, 90, 37, 36, 54];
 
  let myNewArray = myArray.findIndex(e => {return e%3}); 
 
@@ -33,6 +33,12 @@ arrayMots = ["Rien", "ne", "sert", "de", "courir", ";", "il", "faut", "partir", 
  myArray.sort();
  console.log(myArray);
 
+ /* En utilisant la methode appropriée, ne gardez seulement que les noms commmençant
+ par la lettre A dans la liste suivante:*/
+
+ var MyArray = ["Brenda", "Amelia", "Kate", "Kayla", "Jackie", "Daria", "Anna"];
+
+ let myNewArrayName =  myArray.filter(e=> {return e[0] === "A"});
 
  
  
