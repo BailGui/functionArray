@@ -47,5 +47,17 @@ arrayMots = ["Rien", "ne", "sert", "de", "courir", ";", "il", "faut", "partir", 
 
  let myNewArrayTriple = MyArray.findIndex(e => {return e%3 === 0});
 
- 
+ /* En utilisant la méthode d'array appropriée, donner la moyenne des notes d'une classe qui se trouvent ci-dessous: */
+
+ var myArray = [88, 77, 54, 0, 91, 89, 69, 67, 82, 51, 72, 52, 91, 49, 66, 81];
+
+ let myNewArraySum = myArray.reduce((acc, elem) => acc + elem) /16;
+
+
+
+ let myArr = [53882, 80453, 30238, 98621, 45999, 78338, 96038, 5427, 19335, 71624, 33262, 4486];
+
+const aveOfArray = (myArr) => myArr.reduce((sum, val) => sum + val) / myArr.length;
+
+let avg = aveOfArray(myArr)
  
