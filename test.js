@@ -48,3 +48,7 @@ console.log(Entreprises.length);
 for (let i = 0 ;i < Entreprises.length; i++){
     console.log( Entreprises[i].length );
 }
+
+for (let i = Entreprises[i].length; i > 12; i.splice(4)){
+    console.log(i)
+}
