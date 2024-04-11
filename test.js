@@ -36,4 +36,15 @@ var RevenuBook = [26937, 79811, 50785, 35564, 52286, 73493, 92746, 38919, 54428,
 var RevenuInsta = [25854, 19422, 21344, 88533, 20683, 82385, 17783, 7448, 72153, 76673, 93315, 45947];
 var RevenuWhat = [53882, 80453, 30238, 98621, 45999, 78338, 96038, 5427, 19335, 71624, 33262, 4486]; 
 
-let AllRevenuAlpexa = RevenuAlpexa.join
+let AllRevenuAlpexa = RevenuAlpexa.reduce((acc, elem) => acc + elem) /12;
+let AllRevenuSpetriz = RevenuSpetriz.reduce((acc, elem) => acc + elem) /12;
+let AllRevenuBoogle = RevenuBoogle.reduce((acc, elem) => acc + elem) /12;
+let AllRevenuBook = RevenuBook.reduce((acc, elem) => acc + elem) /12;
+let AllRevenuInsta = RevenuInsta.reduce((acc, elem) => acc + elem) /12;
+let AllRevenuWhat = RevenuWhat.reduce((acc, elem) => acc + elem) /12;
+
+console.log(Entreprises.length);
+
+for (let i = 0 ;i < Entreprises.length; i++){
+    console.log( Entreprises[i].length );
+}
