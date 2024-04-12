@@ -43,8 +43,6 @@ let AllRevenuBook = RevenuBook.reduce((acc, elem) => acc + elem) /12;
 let AllRevenuInsta = RevenuInsta.reduce((acc, elem) => acc + elem) /12;
 let AllRevenuWhat = RevenuWhat.reduce((acc, elem) => acc + elem) /12;
 
-console.log(Entreprises.length);
-
 for (let i = 0 ;i < Entreprises.length; i++){
     console.log( Entreprises[i].length );
 }
