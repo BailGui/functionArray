@@ -121,11 +121,15 @@ function foobar(maxNum) {
 
 //5)
 
+//création de la fonction majusculeMot avec comme paramètre un string
 function majusculeMot(string) {
+//création de la variable precedent qui vaut un espace 
     let precedent = " ";
+//création de la variable stringMajusculeMot qui est vide
     let stringMajusculeMot = "";
-
+// création du statement comprenant la variable i avec comme valeur 0 si i est plus petit que la longueur du string, incrémente
     for (let i = 0; i < string.length; i++) {
+// si inegalité stricte
         if (string[i] !== string[i].toUpperCase() && precedent === " ") {
             stringMajusculeMot += string[i].toUpperCase();
         }
@@ -154,32 +158,46 @@ function remplissageGauche(nombre, chiffresTotaux, symbole) {
     return resultat;
 }
 
-7)
-
+//7)
+// création de la fonction dessiner ave comme paramètre x, y, symbouUn comprenant le string '*', symboleDeux comprenant le string '*'
 function dessiner(x, y, symboleUn = '*', symboleDeux= '°') {
-
+// création de la boucle for on crée la variable yCompteur qui vaut 1 si yCompteur est plus petit ou égal a y on incrémente
     for (let yCompteur = 1; yCompteur <= y; yCompteur++) {
+// création d'une variable vide nommée ligne
         let ligne = '';
-
+// création d'une boucle for on crée la variable xCompteur qui vaut 1 si xCompteur est plus petit ou égal à x on incrémente
         for(let xCompteur = 1; xCompteur <= x; xCompteur++) {
+//si 
             if (
+            // xCompteur est strictement égal à 1 ou xCompteur est strictement égal à x 
               ((xCompteur === 1 || xCompteur === x) &&
+            // et yCompteur a une inégalité stricte  et yCompteur a une inégalité stricte sur y
               yCompteur !== 1 && yCompteur !== y) ||
+            // xCompteur a une inégalité stricte et xCompteur une inégalité stricte sur x 
               (xCompteur !== 1 && xCompteur !== x &&
+            // et yCompteur est strictement égal ou yCompteur est strictement égal à y
               (yCompteur === 1 || yCompteur === y))
             ) {
+        // ajoute et assigne la variable ligne a la variable symboleUn
                 ligne += symboleUn;
+            //sinon si 
             } else if (
+            // xCompteur est strictement égal ou xCompteur est strictement égal à x 
               (xCompteur === 1 || xCompteur === x) &&
+            // yCompteur est strictement égal a 1 ou yCompteur est strictement égal à y
               (yCompteur === 1 || yCompteur === y)
             ) {
+            // ajoute et assigne la variable a la variable symboleDeux
               ligne += symboleDeux;
+            // sinon
             } else {
+            // ajoute et assigne un espace a la variable ligne
               ligne += ' ';
             }
         }
-
+// affiche le string de la variable ligne 
         console.log(ligne);
     }
 }
+
 
