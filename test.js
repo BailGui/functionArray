@@ -94,3 +94,92 @@ function voyelles(string) {
 // retourne la valeur totalVoyelles
     return totalVoyelles;
 }
+
+//4)
+
+// création de la fonction foobar nommée maxNum
+function foobar(maxNum) {
+// création du statement comprenant la variable i avec comme valeur 0 si i est plus petit que maxNum, incrémente
+    for (let i = 0; i < maxNum; i++) {
+// si i modulo 5 est strictement égal à 0 et i modulo 3 est strictement égal à 0
+        if (i % 5 === 0 && i % 3 === 0) {
+// affiche la valeur de i plus Foobar en string
+            console.log(i + " FooBar");
+        }
+// sinon si i modulo 5 stricement égal à 0
+        else if (i % 5 === 0) {
+// affiche la valeur de i plus Foo en string
+            console.log(i + " Foo");
+        }
+// sinon si i modulo 3 strictement égal à 0
+        else if (i % 3 === 0) {
+// affiche la valeur de i plus Bar en string
+            console.log(i + " Bar");
+        }
+    }
+}
+
+//5)
+
+function majusculeMot(string) {
+    let precedent = " ";
+    let stringMajusculeMot = "";
+
+    for (let i = 0; i < string.length; i++) {
+        if (string[i] !== string[i].toUpperCase() && precedent === " ") {
+            stringMajusculeMot += string[i].toUpperCase();
+        }
+        else {
+            stringMajusculeMot += string[i];
+        }
+        precedent = string[i];
+    }
+
+    return stringMajusculeMot;
+}
+
+
+
+//6)
+
+function remplissageGauche(nombre, chiffresTotaux, symbole) {
+    nombre = nombre.toString();
+    let resultat = nombre;
+
+    let repetition = chiffresTotaux – nombre.length;
+    if (repetition > 0) {
+        resultat = symbole.repeat(repetition) + nombre;
+    }
+
+    return resultat;
+}
+
+7)
+
+function dessiner(x, y, symboleUn = '*', symboleDeux= '°') {
+
+    for (let yCompteur = 1; yCompteur <= y; yCompteur++) {
+        let ligne = '';
+
+        for(let xCompteur = 1; xCompteur <= x; xCompteur++) {
+            if (
+              ((xCompteur === 1 || xCompteur === x) &&
+              yCompteur !== 1 && yCompteur !== y) ||
+              (xCompteur !== 1 && xCompteur !== x &&
+              (yCompteur === 1 || yCompteur === y))
+            ) {
+                ligne += symboleUn;
+            } else if (
+              (xCompteur === 1 || xCompteur === x) &&
+              (yCompteur === 1 || yCompteur === y)
+            ) {
+              ligne += symboleDeux;
+            } else {
+              ligne += ' ';
+            }
+        }
+
+        console.log(ligne);
+    }
+}
+
