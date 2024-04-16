@@ -50,3 +50,47 @@ for (let i = 0 ;i < Entreprises.length; i++){
 for (let i = Entreprises[i].length; i > 12; i.splice(4)){
     console.log(i)
 }
+
+
+
+//Exercice de compréhension
+
+//Ces exercices seront différents, vous n'aurez aucun code à écrire. 
+//A la place vous devrez commentez le code pour qu'une personne extérieure puisse 
+//comprendre le fonctionnement général du code seulement en lisant vos commentaires. 
+//De plus vous devrez être capable d'expliquer le code oralement ligne par ligne
+
+//1)
+//crée une fonction année { retourne année modulo 4 retourne un bool. 365 ou 366 qui représente le nombre de jours dans une année 
+function jours(annee) { return annee % 4 ? 365 : 366; }
+
+//2)
+// la variable nommée debut est créée avec comme string "Hello et bonne journée !"
+let debut = "Hello et bonne journée !"
+// la variable nommée fin est créée avec un valeur vide
+let fin = "";
+// création du statement for contenant la variable nommée i qui reprends le début du string de la variable debut si i est plus grand ou égal a 0; on décrémente.
+for (let i = debut.length-1; i >= 0; i--) {
+// la variable fin ajoute et assigne a la variable début plus ce qui se trouve dans le tableau de la variable i
+  fin += debut[i];
+}
+
+//3)
+
+// création de la fonction voyelles contenant un string
+function voyelles(string) {
+// création de la variable voyelles contenant un tableau avec "a", "e", "i", "o", "u" comme valeur
+    let voyelles = ["a", "e", "i", "o", "u"];
+// création de la variable totalVoyelles avec comme valeur 0
+    let totalVoyelles = 0;
+// créatoin du statement for contenant la variable nommée i qui vaut 0 si i est plus petit la longueur du string; on incrémente
+    for (let i = 0; i < string.length; i++) {
+// on utilise la méthode .includes pour savoir si un valeur est présente dans l'array et renvoi true ou false
+        if ( voyelles.includes(string[i]) ) {
+// on incrémente dans la variable totalVoyelles
+            totalVoyelles++;
+        }
+    }
+// retourne la valeur totalVoyelles
+    return totalVoyelles;
+}
