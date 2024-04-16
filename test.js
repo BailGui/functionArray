@@ -99,7 +99,7 @@ function voyelles(string) {
 
 // création de la fonction foobar avec comme paramètre maxNum
 function foobar(maxNum) {
-// création du statement comprenant la variable i avec comme valeur 0 si i est plus petit que maxNum, incrémente
+// création du statement for comprenant la variable i avec comme valeur 0 si i est plus petit que maxNum, incrémente
     for (let i = 0; i < maxNum; i++) {
 // si i modulo 5 est strictement égal à 0 et i modulo 3 est strictement égal à 0
         if (i % 5 === 0 && i % 3 === 0) {
@@ -127,7 +127,7 @@ function majusculeMot(string) {
     let precedent = " ";
 //création de la variable stringMajusculeMot qui est vide
     let stringMajusculeMot = "";
-// création du statement comprenant la variable i avec comme valeur 0 si i est plus petit que la longueur du string, incrémente
+// création du statement for comprenant la variable i avec comme valeur 0 si i est plus petit que la longueur du string, incrémente
     for (let i = 0; i < string.length; i++) {
 // si ... inegalité stricte ...et précédent est strictement égal à un string avec un espace
         if (string[i] !== string[i].toUpperCase() && precedent === " ") {
@@ -153,13 +153,16 @@ function majusculeMot(string) {
 function remplissageGauche(nombre, chiffresTotaux, symbole) {
     //la variable nombre est égal a la variable nombre avec la méthode toString()
     nombre = nombre.toString();
+    //la variable résult est égal à nombre
     let resultat = nombre;
-
+    //la variable répétition est égal à la variable chiffresTotaux moins la longueur du nombre
     let repetition = chiffresTotaux – nombre.length;
+    // si avec comme paramétre la variable répétition est plus grande que 0
     if (repetition > 0) {
+        //la variable resultat est égal a la variable symbole avec la methode repeat comprenant la variable répétition + la variable nombre
         resultat = symbole.repeat(repetition) + nombre;
     }
-
+    //retourne la variable resultat
     return resultat;
 }
 
