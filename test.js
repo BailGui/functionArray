@@ -61,7 +61,7 @@ for (let i = Entreprises[i].length; i > 12; i.splice(4)){
 //De plus vous devrez être capable d'expliquer le code oralement ligne par ligne
 
 //1)
-//crée une fonction année { retourne année modulo 4 retourne un bool. 365 ou 366 qui représente le nombre de jours dans une année 
+//crée une fonction année avec comme paramètre retourne année modulo 4 retourne un bool. 365 ou 366 qui représente le nombre de jours dans une année 
 function jours(annee) { return annee % 4 ? 365 : 366; }
 
 //2)
@@ -77,7 +77,7 @@ for (let i = debut.length-1; i >= 0; i--) {
 
 //3)
 
-// création de la fonction voyelles contenant un string
+// création de la fonction voyelles avec comme paramètre un string
 function voyelles(string) {
 // création de la variable voyelles contenant un tableau avec "a", "e", "i", "o", "u" comme valeur
     let voyelles = ["a", "e", "i", "o", "u"];
@@ -97,7 +97,7 @@ function voyelles(string) {
 
 //4)
 
-// création de la fonction foobar nommée maxNum
+// création de la fonction foobar avec comme paramètre maxNum
 function foobar(maxNum) {
 // création du statement comprenant la variable i avec comme valeur 0 si i est plus petit que maxNum, incrémente
     for (let i = 0; i < maxNum; i++) {
@@ -129,24 +129,29 @@ function majusculeMot(string) {
     let stringMajusculeMot = "";
 // création du statement comprenant la variable i avec comme valeur 0 si i est plus petit que la longueur du string, incrémente
     for (let i = 0; i < string.length; i++) {
-// si inegalité stricte
+// si ... inegalité stricte ...et précédent est strictement égal à un string avec un espace
         if (string[i] !== string[i].toUpperCase() && precedent === " ") {
+            // ajoute et assing la variable stringMajusculeMot avec ... 
             stringMajusculeMot += string[i].toUpperCase();
         }
+        //sinon
         else {
+            //ajoute et assigne la variable stringMajusculeMot a ...
             stringMajusculeMot += string[i];
         }
+        // la variable précedent est égal à ...
         precedent = string[i];
     }
-
+    //retourne la variable stringMajusculeMot
     return stringMajusculeMot;
 }
 
 
 
 //6)
-
+// création de la fonction remplissageGauche avec comme paramètre nombre, chiffresTotaux, symbole
 function remplissageGauche(nombre, chiffresTotaux, symbole) {
+    //la variable nombre est égal a la variable nombre avec la méthode toString()
     nombre = nombre.toString();
     let resultat = nombre;
 
@@ -159,7 +164,7 @@ function remplissageGauche(nombre, chiffresTotaux, symbole) {
 }
 
 //7)
-// création de la fonction dessiner ave comme paramètre x, y, symbouUn comprenant le string '*', symboleDeux comprenant le string '*'
+// création de la fonction dessiner avec comme paramètre x, y, symbouUn comprenant le string '*', symboleDeux comprenant le string '*'
 function dessiner(x, y, symboleUn = '*', symboleDeux= '°') {
 // création de la boucle for on crée la variable yCompteur qui vaut 1 si yCompteur est plus petit ou égal a y on incrémente
     for (let yCompteur = 1; yCompteur <= y; yCompteur++) {
