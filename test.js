@@ -121,6 +121,8 @@ function foobar(maxNum) {
 
 //5)
 
+//FONCTION PERMETTANT D'AJOUTER UNE MAJUSCULE A CHAQUE PREMIERE LETTRE DE CHAQUE MOTS
+
 //création de la fonction majusculeMot avec comme paramètre un string
 function majusculeMot(string) {
 //création de la variable precedent qui vaut un espace 
@@ -149,7 +151,8 @@ function majusculeMot(string) {
 
 
 //6)
-// création de la fonction remplissageGauche avec comme paramètre nombre, chiffresTotaux, symbole
+
+// création de la fonction remplissageGauche avec comme argument nombre, chiffresTotaux, symbole
 function remplissageGauche(nombre, chiffresTotaux, symbole) {
     //la variable nombre est égal a la variable nombre avec la méthode toString()
     nombre = nombre.toString();
@@ -167,6 +170,7 @@ function remplissageGauche(nombre, chiffresTotaux, symbole) {
 }
 
 //7)
+
 // création de la fonction dessiner avec comme paramètre x, y, symbouUn comprenant le string '*', symboleDeux comprenant le string '*'
 function dessiner(x, y, symboleUn = '*', symboleDeux= '°') {
 // création de la boucle for on crée la variable yCompteur qui vaut 1 si yCompteur est plus petit ou égal a y on incrémente

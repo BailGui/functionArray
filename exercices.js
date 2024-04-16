@@ -53,11 +53,11 @@ arrayMots = ["Rien", "ne", "sert", "de", "courir", ";", "il", "faut", "partir", 
 
  let myNewArraySum = myArray.reduce((acc, elem) => acc + elem) /16;
 
-
+ /* En utilisant la méthode d'array appropriée, donner la moyenne des notes d'une classe qui se trouvent ci-dessous: */ /*BIS*/
 
  let myArr = [53882, 80453, 30238, 98621, 45999, 78338, 96038, 5427, 19335, 71624, 33262, 4486];
 
-//const aveOfArray = (myArr) => myArr.reduce((sum, val) => sum + val) / myArr.length;
+ const aveOfArray = (myArr) => myArr.reduce((sum, val) => sum + val) / myArr.length;
 
-//let avg = aveOfArray(myArr)
+ let avg = aveOfArray(myArr)
  
